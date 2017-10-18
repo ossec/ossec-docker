@@ -1,8 +1,11 @@
 **Description**
 
 
-Based on Centos 7, this can be easily adapted for RHEL 7 for FIPS-140-2 compliance. By default this container
-will create a volume to store configurat, log and agent key data under /var/ossec/data.  Additionally it is configured with a local instance of postfix to send alert notifications.
+Based on Centos 7, this is the official OSSEC project docker container. Note: this can be easily adapted for RHEL 7 for FIPS-140-2 compliance. 
+
+By default this container will create a volume to store configuration, log and agent key data 
+under /var/ossec/data.  Additionally it is configured with a local instance of postfix to 
+send alert notifications.
 
   
 **Launch:**
@@ -12,7 +15,9 @@ will create a volume to store configurat, log and agent key data under /var/osse
 
 **Launch with a specified Volume:**
 
+
 	docker volume create ossec-data
+
 
         docker run -d -p 1514:1514/udp -p 1515:1515/tcp -v ossec-data:/var/ossec/data --name ossec-server atomicorp/ossec-docker
 
