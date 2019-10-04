@@ -1,4 +1,4 @@
-**Description**
+**Description:**
 
 OSSEC HIDS Server v2.9.4
 
