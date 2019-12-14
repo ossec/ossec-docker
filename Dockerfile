@@ -18,7 +18,7 @@ ADD ossec-server.sh /ossec-server.sh
 
 RUN \
 	yum -y update && \
-	yum -y install wget useradd postfix && \
+	yum -y install wget postfix && \
 	yum clean all && \
 	cd /root; NON_INT=1 wget -q -O - https://updates.atomicorp.com/installers/atomic |sh && \
 	yum -y install ossec-hids-server && \
