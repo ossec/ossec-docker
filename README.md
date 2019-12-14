@@ -2,7 +2,7 @@
 
 OSSEC HIDS Server v2.9.4
 
-Based on Centos 7, this is the official OSSEC project docker container. Note: this can be easily adapted for RHEL 7 for FIPS-140-2 compliance. 
+Based on Centos 8, this is the official OSSEC project docker container. Note: this can be easily adapted for RHEL 8 for FIPS-140-2 compliance. 
 
 By default this container will create a volume to store configuration, log and agent key data 
 under /var/ossec/data.  Additionally it is configured with a local instance of postfix to 
